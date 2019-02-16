@@ -26,11 +26,9 @@ end
 
 def printer(speakers)
   #print out the badges and room assignments individually
-  print_room = assign_rooms(speakers)
   assign_rooms(speakers).each do |message|
     puts message
   end
-  print_badge = batch_badge_creator(speakers)
   batch_badge_creator(speakers).each do |message|
     puts message
   end
